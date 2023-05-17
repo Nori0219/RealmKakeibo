@@ -18,8 +18,27 @@ class NewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func save () {
+        let item = ShoppingItem()//shoppingItemのインスタンスを作成
+        //オプショナル型　??の後にデフォルトの値を入れる
+        item.title = titleTextField.text ?? ""
+        //Int()でnilになった時にエラーにならないように0をセット
+        item.price = Int(priceTextField.text ?? "") ?? 0
+        item.isMarked = markSwitsh.isOn
+        //それぞれのプロパティをセットしたらDBに登録
+        createItem(item: item)
+        
+        //前の画面に戻る
+        self.dismiss(animated: true)
+    }
+    
+    //引数としてshoppingItemを受け取る
+    func createItem(item: ShoppingItem) {
+        try! realm.write {
+            realm.add(item)
+        }
     }
     
 
