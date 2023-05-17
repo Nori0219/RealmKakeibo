@@ -28,6 +28,9 @@
                     <navigationItem key="navigationItem" id="V95-UJ-0yz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xqd-hz-Ghn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dmq-c1-xbq" id="dVQ-ST-JAB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
