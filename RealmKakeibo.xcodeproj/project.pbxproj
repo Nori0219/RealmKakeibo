@@ -16,6 +16,8 @@
 		F0946C4C2A14CF86007E64EC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F0946C4B2A14CF86007E64EC /* Realm */; };
 		F0946C4E2A14CF86007E64EC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F0946C4D2A14CF86007E64EC /* RealmSwift */; };
 		F0946C502A14D1A3007E64EC /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0946C4F2A14D1A3007E64EC /* ShoppingItem.swift */; };
+		F0946C532A14D404007E64EC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0946C512A14D404007E64EC /* ItemTableViewCell.swift */; };
+		F0946C542A14D404007E64EC /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0946C522A14D404007E64EC /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F0946C422A14CEBB007E64EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0946C442A14CEBB007E64EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0946C4F2A14D1A3007E64EC /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		F0946C512A14D404007E64EC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		F0946C522A14D404007E64EC /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				F0946C412A14CEBB007E64EC /* LaunchScreen.storyboard */,
 				F0946C442A14CEBB007E64EC /* Info.plist */,
 				F0946C4F2A14D1A3007E64EC /* ShoppingItem.swift */,
+				F0946C512A14D404007E64EC /* ItemTableViewCell.swift */,
+				F0946C522A14D404007E64EC /* ItemTableViewCell.xib */,
 			);
 			path = RealmKakeibo;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0946C542A14D404007E64EC /* ItemTableViewCell.xib in Resources */,
 				F0946C432A14CEBB007E64EC /* LaunchScreen.storyboard in Resources */,
 				F0946C402A14CEBB007E64EC /* Assets.xcassets in Resources */,
 				F0946C3E2A14CEB8007E64EC /* Main.storyboard in Resources */,
@@ -154,6 +161,7 @@
 			files = (
 				F0946C502A14D1A3007E64EC /* ShoppingItem.swift in Sources */,
 				F0946C3B2A14CEB8007E64EC /* ViewController.swift in Sources */,
+				F0946C532A14D404007E64EC /* ItemTableViewCell.swift in Sources */,
 				F0946C372A14CEB8007E64EC /* AppDelegate.swift in Sources */,
 				F0946C392A14CEB8007E64EC /* SceneDelegate.swift in Sources */,
 			);

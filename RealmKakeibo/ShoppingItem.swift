@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class ShoppingItem: Object {
-    @Persisted var title: String = ""
-    @Persisted var price: int = 0
-    @Persisted var isMarked: Bool = false
+    @Persisted var title: String = ""//名前
+    @Persisted var price: Int = 0//値段
+    @Persisted var isMarked: Bool = false//重要な買い物かどうか
 }
