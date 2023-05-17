@@ -24,6 +24,12 @@ class ViewController: UIViewController ,UITableViewDataSource{
         items = readItems()//取得した買い物の記録データをitemsに代入
     }
     
+    //画面が表示されるときに実行されるメソッド
+    override func viewWillAppear(_ animated: Bool) {
+        items = readItems()//items配列を最新の状態に更新
+        tableView.reloadData()//TableViewのリロード
+    }
+    
     //表示するセルの数を指定する　要素数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
