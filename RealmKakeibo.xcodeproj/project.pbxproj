@@ -18,6 +18,7 @@
 		F0946C502A14D1A3007E64EC /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0946C4F2A14D1A3007E64EC /* ShoppingItem.swift */; };
 		F0946C532A14D404007E64EC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0946C512A14D404007E64EC /* ItemTableViewCell.swift */; };
 		F0946C542A14D404007E64EC /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0946C522A14D404007E64EC /* ItemTableViewCell.xib */; };
+		F0946C562A14E6E2007E64EC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0946C552A14E6E2007E64EC /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F0946C4F2A14D1A3007E64EC /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		F0946C512A14D404007E64EC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		F0946C522A14D404007E64EC /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		F0946C552A14E6E2007E64EC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				F0946C4F2A14D1A3007E64EC /* ShoppingItem.swift */,
 				F0946C512A14D404007E64EC /* ItemTableViewCell.swift */,
 				F0946C522A14D404007E64EC /* ItemTableViewCell.xib */,
+				F0946C552A14E6E2007E64EC /* NewViewController.swift */,
 			);
 			path = RealmKakeibo;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				F0946C502A14D1A3007E64EC /* ShoppingItem.swift in Sources */,
 				F0946C3B2A14CEB8007E64EC /* ViewController.swift in Sources */,
 				F0946C532A14D404007E64EC /* ItemTableViewCell.swift in Sources */,
+				F0946C562A14E6E2007E64EC /* NewViewController.swift in Sources */,
 				F0946C372A14CEB8007E64EC /* AppDelegate.swift in Sources */,
 				F0946C392A14CEB8007E64EC /* SceneDelegate.swift in Sources */,
 			);
