@@ -15,6 +15,7 @@ class NewItemViewController: UIViewController {
     @IBOutlet var markSwitsh: UISwitch!
     
     let realm = try! Realm()
+    var category: Category!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class NewItemViewController: UIViewController {
         item.title = titleTextField.text ?? ""
         //Int()でnilになった時にエラーにならないように0をセット
         item.price = Int(priceTextField.text ?? "") ?? 0
+        item.category = category
         item.isMarked = markSwitsh.isOn
         //それぞれのプロパティをセットしたらDBに登録
         createItem(item: item)

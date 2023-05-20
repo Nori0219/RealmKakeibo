@@ -14,6 +14,7 @@ class ItemViewController: UIViewController ,UITableViewDataSource{
     
     let realm = try! Realm()//Realmを扱うための宣言
     var items: [ShoppingItem] = []//shoppingItem型の配列を宣言
+    var selectedCategory: Category!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class ItemViewController: UIViewController ,UITableViewDataSource{
         //カスタムセルをTableViewに登録
         tableView.register(UINib(nibName: "ItemTableViewCell", bundle: nil), forCellReuseIdentifier: "ItemCell")
         items = readItems()//取得した買い物の記録データをitemsに代入
+        navigationItem.title = selectedCategory.title//今見ているカテゴリーの名前を表示
     }
     
     //画面が表示されるときに実行されるメソッド
@@ -46,7 +48,15 @@ class ItemViewController: UIViewController ,UITableViewDataSource{
     
     //戻り値が[ShoppingItem]型の関数（矢印の後が型）　配列として記録された値を返す
     func readItems() -> [ShoppingItem] {
-        return Array(realm.objects(ShoppingItem.self))//returnの後が戻り値
+        //filterでカテゴリーが一致する買い物だけを取り出している
+        return Array(realm.objects(ShoppingItem.self).filter("category ==  %@", selectedCategory!))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNewItemView" {
+            let newItemViewController = segue.destination as! NewItemViewController
+            newItemViewController.category = self.selectedCategory
+        }
     }
     
     

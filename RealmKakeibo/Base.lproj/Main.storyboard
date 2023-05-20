@@ -39,12 +39,13 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="i5c-4z-fmD"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="qIa-CA-pNM" id="YOb-u3-YRE"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toItemView" id="WF2-Vm-4MY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9IX-lO-C4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150.3816793893129" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1083" y="-2"/>
         </scene>
         <!--Item View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -78,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1906.1068702290077" y="-2.1126760563380285"/>
         </scene>
-        <!--New View Controller-->
+        <!--New Item View Controller-->
         <scene sceneID="V21-kp-dbh">
             <objects>
-                <viewController id="VrK-S2-3Ld" customClass="NewViewController" customModule="RealmKakeibo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VrK-S2-3Ld" customClass="NewItemViewController" customModule="RealmKakeibo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AtR-8S-qz4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
