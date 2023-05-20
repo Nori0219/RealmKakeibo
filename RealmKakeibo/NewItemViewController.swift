@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class NewViewController: UIViewController {
+class NewItemViewController: UIViewController {
     
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var priceTextField: UITextField!
@@ -29,6 +29,9 @@ class NewViewController: UIViewController {
         item.isMarked = markSwitsh.isOn
         //それぞれのプロパティをセットしたらDBに登録
         createItem(item: item)
+        
+        let previousNC = self.presentingViewController as! UINavigationController
+        let previousVC = previousNC.viewControllers[previousNC.viewControllers.count - 1] as! ItemViewController
         
         //前の画面に戻る
         self.dismiss(animated: true)

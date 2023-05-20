@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController ,UITableViewDataSource{
+class ItemViewController: UIViewController ,UITableViewDataSource{
     
     @IBOutlet var tableView: UITableView!
     
