@@ -52,6 +52,8 @@ class ItemViewController: UIViewController ,UITableViewDataSource{
         return Array(realm.objects(ShoppingItem.self).filter("category ==  %@", selectedCategory!))
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toNewItemView" {
             let newItemViewController = segue.destination as! NewItemViewController

@@ -21,6 +21,7 @@
 		F0946C562A14E6E2007E64EC /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0946C552A14E6E2007E64EC /* NewItemViewController.swift */; };
 		F0C819A12A19855200942B9F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C819A02A19855200942B9F /* Category.swift */; };
 		F0C819A32A198AFA00942B9F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C819A22A198AFA00942B9F /* CategoryViewController.swift */; };
+		F0C819A52A19972700942B9F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C819A42A19972700942B9F /* NewCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F0946C552A14E6E2007E64EC /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		F0C819A02A19855200942B9F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F0C819A22A198AFA00942B9F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F0C819A42A19972700942B9F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F0946C552A14E6E2007E64EC /* NewItemViewController.swift */,
 				F0C819A02A19855200942B9F /* Category.swift */,
 				F0C819A22A198AFA00942B9F /* CategoryViewController.swift */,
+				F0C819A42A19972700942B9F /* NewCategoryViewController.swift */,
 			);
 			path = RealmKakeibo;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0946C502A14D1A3007E64EC /* ShoppingItem.swift in Sources */,
+				F0C819A52A19972700942B9F /* NewCategoryViewController.swift in Sources */,
 				F0946C3B2A14CEB8007E64EC /* ItemViewController.swift in Sources */,
 				F0946C532A14D404007E64EC /* ItemTableViewCell.swift in Sources */,
 				F0946C562A14E6E2007E64EC /* NewItemViewController.swift in Sources */,

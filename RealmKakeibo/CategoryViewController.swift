@@ -24,13 +24,18 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         categories = readCategories()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        categories = readCategories()
+        tableView.reloadData()
+    }
+    
     //セルの数はカテゴリーの数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
     }
     
     //CategoryCellのラベルにcategory配列の◯番目の要素のタイトルを表示する
-    func tabeleView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell")!
         cell.textLabel?.text = categories[indexPath.row].title
         
@@ -40,7 +45,8 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     //セルが押されたら実行　押されたカテゴリーを代入して画面遷移する
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCategory = categories[indexPath.row]
-        self.performSegue(withIdentifier: "toItemVoew", sender: nil)
+        self.performSegue(withIdentifier: "toItemView", sender: nil)
+        print(selectedCategory as Any)
     }
     
     //保存されているカテゴリーの記録を取り出して関数の呼び出し元に配列として返す関数

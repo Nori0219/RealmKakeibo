@@ -36,7 +36,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="カテゴリー" id="F2d-Ca-V0n">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="i5c-4z-fmD"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="i5c-4z-fmD">
+                            <connections>
+                                <segue destination="ihc-wH-K4M" kind="presentation" identifier="toNewCategoryView" modalPresentationStyle="fullScreen" id="JiR-Rr-kXo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="qIa-CA-pNM" id="YOb-u3-YRE"/>
@@ -77,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.1068702290077" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="2066" y="333"/>
         </scene>
         <!--New Item View Controller-->
         <scene sceneID="V21-kp-dbh">
@@ -145,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ifv-y1-azi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698.4732824427479" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="3131" y="332"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qUr-ox-YsG">
@@ -164,6 +168,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMM-re-cwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="223.66412213740458" y="-2.1126760563380285"/>
+        </scene>
+        <!--New Category View Controller-->
+        <scene sceneID="0r1-Fb-sug">
+            <objects>
+                <viewController id="ihc-wH-K4M" customClass="NewCategoryViewController" customModule="RealmKakeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxv-1p-yYn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="カテゴリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wP-ta-zmK">
+                                <rect key="frame" x="55" y="137" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGf-5K-DLD">
+                                <rect key="frame" x="55" y="166" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhE-Su-beu">
+                                <rect key="frame" x="318" y="59" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="保存"/>
+                                <connections>
+                                    <action selector="save" destination="ihc-wH-K4M" eventType="touchUpInside" id="5FT-Ew-vI2"/>
+                                    <action selector="save" destination="VrK-S2-3Ld" eventType="touchUpInside" id="Wob-gK-pcT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AYg-AV-n7L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryTextField" destination="uGf-5K-DLD" id="EcG-Ni-XT1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmv-Ry-8Fg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="-409"/>
         </scene>
     </scenes>
     <resources>
